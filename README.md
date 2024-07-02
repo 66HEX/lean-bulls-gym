@@ -1,4 +1,4 @@
-# Lean Bulls Gym Website
+# Lean Bulls Gym
 
 This repository contains the source code for the Lean Bulls Gym website. The website provides information about the gym, its trainers, services, pricing, and contact details. It is designed to give potential and current members an overview of what the gym offers and how to get in touch.
 
