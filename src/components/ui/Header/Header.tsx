@@ -49,8 +49,8 @@ const Header = () => {
         <header className="fixed top-0 xl:top-2 left-0 w-full z-50 bg-hexblack/50 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
             <nav className="flex justify-between items-center h-16 p-4 px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex space-x-4 items-center text-hexwhite">
-                    <img src={logo} alt="Logo Lean Bulls Gym" className="h-8 w-8" />
-                    <p className="font-ClashDisplay text-lg">Lean Bulls Gym</p>
+                    <img src={logo} alt="Logo Lean Bulls Gym" className="h-12 w-12 xl:h-8 xl:w-8" />
+                    <p className="font-ClashDisplay text-2xl xl:text-lg">Lean Bulls Gym</p>
                 </div>
                 <div className="hidden lg:flex space-x-4 font-ClashDisplay text-hexwhite text-lg" role="navigation">
                     <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label="Przejdź do strony głównej">Strona główna</a>
@@ -66,12 +66,12 @@ const Header = () => {
                     onClick={toggleMenu}
                     aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
                 >
-                    <FontAwesomeIcon icon={faBars} size="lg" />
+                    <FontAwesomeIcon icon={faBars} size="2xl" />
                 </button>
             </nav>
             <div
                 ref={menuRef}
-                className={`md:hidden overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 rounded-lg shadow-lg ${isOpen ? '' : 'hidden'}`}
+                className={`md:hidden text-2xl overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 rounded-lg shadow-lg ${isOpen ? '' : 'hidden'}`}
                 role="navigation"
             >
                 <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label="Przejdź do strony głównej">Strona główna</a>
