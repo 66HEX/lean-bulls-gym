@@ -12,7 +12,7 @@ const HomeSection = () => {
     return (
         <section
             id="home"
-            className="w-screen h-screen flex flex-col justify-center items-center bg-cover bg-center text-hexwhite p-4 md:p-8 lg:p-12 xl:p-16"
+            className="w-screen h-svh flex flex-col justify-center items-center bg-cover bg-center text-hexwhite p-4 md:p-8 lg:p-12 xl:p-16"
             style={{
                 backgroundImage: `url(${'/home.webp'})`,
             }}
