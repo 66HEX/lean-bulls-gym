@@ -30,7 +30,7 @@ const HomeSection = () => {
                 className=" border-2 border-hexwhite text-hexwhite p-5 rounded-full flex items-center justify-center transition-transform transform hover:scale-105 duration-300 focus:outline-none z-10"
                 aria-label="Scroll down"
             >
-                <img src="/src/assets/icons/double_arrow.svg" className="h-8 w-8" alt="Scroll down arrow"/>
+                <img src="/double_arrow.svg" className="h-8 w-8" alt="Scroll down arrow"/>
             </button>
         </section>
     );

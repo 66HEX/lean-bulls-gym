@@ -37,7 +37,6 @@ const GallerySection = () => {
     };
 
     useEffect(() => {
-
         if (lightboxOpen) {
             document.addEventListener('mousedown', handleOutsideClick);
         }
@@ -68,6 +67,7 @@ const GallerySection = () => {
                                 src={image}
                                 alt={`Zdjęcie siłowni ${index + 1}`}
                                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                loading="lazy" // Dodany lazy loading
                             />
                         </div>
                     ))}
