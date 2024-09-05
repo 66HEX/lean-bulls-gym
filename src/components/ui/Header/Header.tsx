@@ -46,7 +46,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-hexblack/50 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
+        <header className="fixed top-0 xl:top-2 left-0 w-full z-50 bg-hexblack/50 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
             <nav className="flex justify-between items-center leading-relaxed h-16 p-4 px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex space-x-4 items-center text-hexwhite">
                     <img src={logo} alt="Logo Lean Bulls Gym" className="h-12 w-12 xl:h-8 xl:w-8" />
