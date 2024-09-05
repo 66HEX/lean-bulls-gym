@@ -73,7 +73,7 @@ const GallerySection = () => {
                 </div>
 
                 {lightboxOpen && (
-                    <div className="fixed inset-0 z-50 lightbox bg-hexblack bg-opacity-90 flex items-center justify-center">
+                    <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center">
                         <div
                             ref={lightboxRef}
                             className="relative max-w-4xl max-h-4xl bg-hexwhite p-4 rounded-lg"
