@@ -27,11 +27,23 @@ const HomeSection = () => {
 
             <button
                 onClick={handleScrollToAbout}
-                className="mt-10 border-2 border-hexwhite text-hexwhite p-5 rounded-full flex items-center justify-center transition-transform transform hover:scale-105 duration-300 focus:outline-none z-10"
+                className="mt-10 border-2 border-hexwhite p-5 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-hexwhite focus:outline-none z-10 group"
                 aria-label="Scroll down"
             >
-                <img src="/double_arrow.svg" className="h-8 w-8" alt="Scroll down arrow"/>
+                <svg
+                    className="h-10 w-10 transition-colors duration-300 group-hover:fill-hexblack"
+                    viewBox="0 0 800.49 700.85"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                >
+                    <path className="cls-1"
+                          d="m11.4,141.6l366.66,333.33c12.7,11.57,32.17,11.57,44.87,0l366.66-333.33c6.93-6.3,10.9-15.27,10.9-24.67V0s-377.63,341.66-377.63,341.66c-12.7,11.5-32.03,11.5-44.73,0L.5,0v116.93c0,9.4,3.97,18.37,10.9,24.67Z"/>
+                    <path className="cls-1"
+                          d="m10.9,358.85l366.66,333.33c12.7,11.57,32.17,11.57,44.87,0l366.66-333.33c6.93-6.3,10.9-15.27,10.9-24.67v-116.93s-377.63,341.66-377.63,341.66c-12.7,11.5-32.03,11.5-44.73,0L0,217.26v116.93c0,9.4,3.97,18.37,10.9,24.67Z"/>
+                </svg>
+
             </button>
+
         </section>
     );
 };
