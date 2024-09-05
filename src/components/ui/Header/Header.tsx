@@ -18,7 +18,7 @@ const Header = () => {
             gsap.fromTo(
                 menuRef.current,
                 { height: 0, opacity: 0 },
-                { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out" }
+                { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out", display: "flex" }
             );
         } else if (menuRef.current) {
             gsap.to(menuRef.current, {
@@ -28,7 +28,7 @@ const Header = () => {
                 ease: "power2.in",
                 onComplete: () => {
                     if (menuRef.current) {
-                        menuRef.current.style.height = ""; // Resetuje wysokość po animacji
+                        gsap.set(menuRef.current, { display: "none" });
                     }
                 },
             });
@@ -46,7 +46,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 xl:top-2 left-0 w-full z-50 bg-hexblack/50 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
+        <header className="fixed top-0 left-0 w-full z-50 bg-hexblack/50 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
             <nav className="flex justify-between items-center leading-relaxed h-16 p-4 px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex space-x-4 items-center text-hexwhite">
                     <img src={logo} alt="Logo Lean Bulls Gym" className="h-12 w-12 xl:h-8 xl:w-8" />
@@ -71,7 +71,8 @@ const Header = () => {
             </nav>
             <div
                 ref={menuRef}
-                className={`md:hidden text-xl overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 rounded-lg shadow-lg ${isOpen ? '' : 'hidden'}`}
+                className="md:hidden text-xl overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 rounded-lg shadow-lg"
+                style={{ display: isOpen ? "flex" : "hidden" }}
                 role="navigation"
             >
                 <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label="Przejdź do strony głównej">Strona główna</a>
