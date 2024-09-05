@@ -54,10 +54,10 @@ const PricingSection = () => {
                             key={index}
                             className="flex flex-col items-center bg-hexwhite rounded-xl shadow-xl p-4 transition-transform duration-300 hover:scale-105"
                         >
-                            <h2 className="text-2xl font-semibold mb-2 text-hexblack font-ClashDisplay">{plan.name}</h2>
+                            <h2 className="text-2xl font-semibold mb-2 text-hexblack font-ClashDisplay leading-relaxed">{plan.name}</h2>
                             <p className="text-hexblack text-xl font-semibold mb-4 font-ClashDisplay leading-relaxed">{plan.price}</p>
                             <p className="text-hexblack text-lg font-ClashDisplay mb-4 leading-relaxed">{plan.description}</p>
-                            <ul className="list-disc list-inside text-left text-hexblack font-ClashDisplay">
+                            <ul className="list-disc list-inside text-left text-hexblack font-ClashDisplay leading-relaxed">
                                 {plan.features.map((feature, idx) => (
                                     <li key={idx} className="mb-2">{feature}</li>
                                 ))}

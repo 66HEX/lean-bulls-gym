@@ -19,7 +19,7 @@ const TeamSection = () => {
                 className="container mx-auto text-center"
             >
                 <div className="mb-8 max-w-5xl mx-auto px-4 md:px-8 ">
-                    <h1 className="text-4xl md:text-6xl font-semibold mb-4 font-ClashDisplay">
+                    <h1 className="text-4xl md:text-6xl font-semibold mb-4 font-ClashDisplay leading-relaxed">
                         Trenerzy
                     </h1>
                     <p className="text-lg font-ClashDisplay text-justify md:text-center mx-auto leading-relaxed">
@@ -41,8 +41,8 @@ const TeamSection = () => {
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <h2 className="text-2xl font-semibold mb-2 text-hexblack font-ClashDisplay">{member.name}</h2>
-                            <p className="text-hexblack text-lg font-ClashDisplay">{member.role}</p>
+                            <h2 className="text-2xl font-semibold mb-2 text-hexblack font-ClashDisplay leading-relaxed">{member.name}</h2>
+                            <p className="text-hexblack text-lg font-ClashDisplay leading-relaxed">{member.role}</p>
                         </div>
                     ))}
                 </div>

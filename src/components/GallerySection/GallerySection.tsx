@@ -50,7 +50,7 @@ const GallerySection = () => {
         <section id="gallery" className="w-screen bg-hexwhite p-4 md:p-8 lg:p-12 xl:p-16">
             <div className="container mx-auto text-center">
                 <div className="mb-8 max-w-5xl mx-auto px-4 md:px-8">
-                    <h1 className="text-4xl md:text-6xl font-semibold mb-4 font-ClashDisplay">Galeria</h1>
+                    <h1 className="text-4xl md:text-6xl font-semibold mb-4 font-ClashDisplay leading-relaxed">Galeria</h1>
                     <p className="text-lg font-ClashDisplay text-justify md:text-center mx-auto leading-relaxed">
                         Zobacz naszą siłownię w akcji! Oto kilka zdjęć, które pokazują nasze nowoczesne wyposażenie i przestronną
                         salę treningową. Mamy nadzieję, że te zdjęcia zachęcą Cię do odwiedzenia nas osobiście.
@@ -67,7 +67,7 @@ const GallerySection = () => {
                                 src={image}
                                 alt={`Zdjęcie siłowni ${index + 1}`}
                                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                                loading="lazy" // Dodany lazy loading
+                                loading="lazy"
                             />
                         </div>
                     ))}

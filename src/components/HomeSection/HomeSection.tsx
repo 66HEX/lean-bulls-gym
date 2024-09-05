@@ -18,10 +18,10 @@ const HomeSection = () => {
             }}
         >
             <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-            <h1 className="text-5xl md:text-8xl font-bold text-center mb-4 font-ClashDisplay uppercase mt-20 z-10">
+            <h1 className="text-5xl md:text-8xl font-bold text-center mb-4 font-ClashDisplay uppercase mt-20 z-10 leading-relaxed">
                 Siła, która napędza zwycięstwo
             </h1>
-            <p className="text-lg md:text-xl font-semibold text-center mb-8 font-ClashDisplay uppercase z-10">
+            <p className="text-lg md:text-xl font-semibold text-center mb-8 font-ClashDisplay uppercase z-10 leading-relaxed">
                 Dołącz do nas i poczuj, jak siła staje się Twoją pasją.
             </p>
 
