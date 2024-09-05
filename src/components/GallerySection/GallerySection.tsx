@@ -73,24 +73,26 @@ const GallerySection = () => {
                 </div>
 
                 {lightboxOpen && (
-                    <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center">
-                        <div
-                            ref={lightboxRef}
-                            className="relative max-w-4xl max-h-4xl bg-hexwhite p-4 rounded-lg"
-                        >
-                            <img
-                                src={currentImage || ''}
-                                alt="Powiększone zdjęcie"
-                                className="w-full h-full object-contain"
-                            />
-                            <button
-                                onClick={closeLightbox}
-                                className="absolute top-4 right-4 text-hexwhite text-2xl rounded-full p-4 "
+                    <>
+                        <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center">
+                            <div
+                                ref={lightboxRef}
+                                className="relative max-w-4xl max-h-4xl bg-hexwhite p-4 rounded-lg"
                             >
-                                <FontAwesomeIcon icon={faTimes} size="xl" />
-                            </button>
+                                <img
+                                    src={currentImage || ''}
+                                    alt="Powiększone zdjęcie"
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
                         </div>
-                    </div>
+                        <button
+                            onClick={closeLightbox}
+                            className="fixed top-0 right-0 text-hexwhite text-2xl rounded-full p-4 z-50"
+                        >
+                            <FontAwesomeIcon icon={faTimes} size="xl" />
+                        </button>
+                    </>
                 )}
             </div>
         </section>
