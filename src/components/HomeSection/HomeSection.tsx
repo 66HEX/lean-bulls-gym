@@ -21,7 +21,7 @@ const HomeSection = () => {
             <h1 className="text-5xl md:text-8xl font-bold text-center mb-10 font-ClashDisplay uppercase mt-20 z-10">
                 Siła, która napędza zwycięstwo
             </h1>
-            <p className="text-base md:text-xl font-semibold text-center mb-10 font-ClashDisplay uppercase z-10 leading-relaxed">
+            <p className="text-lg md:text-xl font-semibold text-center mb-10 font-ClashDisplay uppercase z-10 leading-relaxed">
                 Dołącz do nas i poczuj, jak siła staje się Twoją pasją.
             </p>
 
