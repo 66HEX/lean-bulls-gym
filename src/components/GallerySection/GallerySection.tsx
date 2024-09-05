@@ -87,7 +87,7 @@ const GallerySection = () => {
                                 onClick={closeLightbox}
                                 className="absolute top-4 right-4 text-white text-2xl rounded-full p-4"
                             >
-                                <FontAwesomeIcon icon={faTimes} />
+                                <FontAwesomeIcon icon={faTimes} size="xl" />
                             </button>
                         </div>
                     </div>
