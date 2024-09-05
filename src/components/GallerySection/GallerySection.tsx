@@ -73,10 +73,10 @@ const GallerySection = () => {
                 </div>
 
                 {lightboxOpen && (
-                    <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-75 flex items-center justify-center">
+                    <div className="fixed inset-0 z-50 lightbox bg-hexblack bg-opacity-90 flex items-center justify-center">
                         <div
                             ref={lightboxRef}
-                            className="relative max-w-4xl max-h-4xl bg-white p-4 rounded-lg"
+                            className="relative max-w-4xl max-h-4xl bg-hexwhite p-4 rounded-lg"
                         >
                             <img
                                 src={currentImage || ''}
@@ -85,7 +85,7 @@ const GallerySection = () => {
                             />
                             <button
                                 onClick={closeLightbox}
-                                className="absolute top-4 right-4 text-white text-2xl rounded-full p-4"
+                                className="absolute top-4 right-4 text-hexwhite text-2xl rounded-full p-4 "
                             >
                                 <FontAwesomeIcon icon={faTimes} size="xl" />
                             </button>

@@ -62,7 +62,7 @@ const Header = () => {
                     <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} aria-label="Skontaktuj się z nami">Kontakt</a>
                 </div>
                 <button
-                    className="lg:hidden text-white"
+                    className="lg:hidden text-hexwhite"
                     onClick={toggleMenu}
                     aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
                 >
