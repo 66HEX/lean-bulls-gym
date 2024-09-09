@@ -88,10 +88,10 @@ const Preloader: React.FC = () => {
         <div>
             <div
                 id="preloader"
-                className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-screen z-[100] bg-hexblack"
+                className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-svh z-[100] bg-hexblack"
             >
                 {/* Top Logo */}
-                <img src={LogoTop} className="logo-top opacity-0" alt="Logo Top" height={250} width={250}/>
+                <img src={LogoTop} className="logo-top opacity-0" alt="Logo Top" height={300} width={300}/>
 
                 {/* Center Logo */}
                 <img src={LogoCenter} className="logo-center opacity-0" alt="Logo Center" height={250} width={250}/>
