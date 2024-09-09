@@ -36,17 +36,18 @@ const Preloader: React.FC = () => {
 
         tll.to(
             "#bar",
-            { scale: 0, duration: 0.3, ease: "power2.out" }
+            { scale: 0, duration: 0.4, ease: "power2.out" }
         );
         tll.to(
             "#percent",
-            { scale: 0, duration: 0.3, ease: "power2.out" }
+            { scale: 0, duration: 0.4, ease: "power2.out" }
         );
 
         tll.to("#preloader", {
-            duration: 0.5,
+            duration: 0.4,
             opacity: 0,
             ease: "power2.out",
+            delay: 0.2,
             onComplete: () => {
                 if (preloader) {
                     preloader.style.visibility = 'hidden';
