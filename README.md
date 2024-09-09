@@ -1,50 +1,82 @@
-# React + TypeScript + Vite
+# Lean Bulls Gym
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Lean Bulls Gym** is a modern, responsive website for Lean Bulls Gym, built with React and TypeScript, featuring advanced animations powered by GSAP (GreenSock Animation Platform). The website provides an immersive experience for visitors and includes sections for pricing, gallery, contact information, and an animated preloader.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can view a live demo of the project here: [Live Demo](https://lean-bulls-gym.vercel.app/)
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Preloader Animation**: 
+  - A custom animated preloader sequence featuring three distinct gym logos (top, center, bottom).
+  - Each logo appears in sequence with smooth scaling and fading effects using GSAP.
+
+- **Responsive Design**: 
+  - Fully responsive layout that adapts to different devices and screen sizes.
+  - Ensures a consistent and user-friendly experience across desktops, tablets, and mobile devices.
+
+- **Smooth Scrolling**: 
+  - Integrated **Lenis** library for seamless, smooth scrolling between sections.
+  - Enhances user experience by providing a fluid navigation experience.
+
+- **GSAP Animations**: 
+  - Advanced animations using GSAP for dynamic transitions and interactive components.
+  - Includes animated gallery elements, pricing cards, and more.
+
+- **Interactive Pricing Section**: 
+  - Displays multiple subscription plans with detailed descriptions and features.
+  - Interactive cards with hover effects to highlight different pricing options.
+
+- **Lightbox Gallery**: 
+  - A gallery section where users can click on images to view larger versions in a lightbox.
+  - Includes smooth transitions and click-to-close functionality with GSAP animations.
+
+- **Footer with Social Media Links**: 
+  - Footer section featuring links to social media profiles (Facebook, Instagram).
+  - Contains contact information, business hours, and additional branding elements.
+
+- **Clean, Modern Aesthetics**: 
+  - Designed with a minimal yet powerful aesthetic, using custom fonts and a tailored color scheme.
+  - Focuses on a sleek and professional appearance that aligns with the gym's brand.
+
+
+## Technologies Used
+
+- **React**: Frontend framework for building UI components.
+- **TypeScript**: Ensures static type checking and a more reliable codebase.
+- **GSAP**: GreenSock Animation Platform for smooth and performant animations.
+- **TailwindCSS**: Utility-first CSS framework for rapid UI development.
+- **FontAwesome**: For social media icons and additional UI elements. 
+- **Lenis**: Smooth scrolling library for seamless navigation between sections.
+
+## Installation
+
+To get started with this project, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/66HEX/lean-bulls-gym.git
+cd lean-bulls-gym
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Designed by [Marek Jóźwiak](https://github.com/66HEX).
