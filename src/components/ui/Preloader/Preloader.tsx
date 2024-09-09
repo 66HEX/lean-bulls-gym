@@ -36,7 +36,7 @@ const Preloader: React.FC = () => {
             // Center logo animation
             .to({}, { duration: 0.3 }) // Short delay before the center logo
             .to(".logo-center", {
-                duration: 0.8,
+                duration: 0.6,
                 scale: 1,
                 opacity: 1,
                 ease: "power3.out",
@@ -63,7 +63,7 @@ const Preloader: React.FC = () => {
             // After all logos appear, they all disappear together
             .to({}, { duration: 0.5 }) // Pause after bottom logo appears
             .to([".logo-center", ".logo-top", ".logo-bottom"], {
-                duration: 0.8,  // All logos fade out together
+                duration: 0.6,  // All logos fade out together
                 scale: 0,
                 opacity: 0,
                 ease: "power3.in",
@@ -71,7 +71,7 @@ const Preloader: React.FC = () => {
 
             // Fade out preloader
             .to("#preloader", {
-                duration: 0.5,
+                duration: 0.6,
                 opacity: 0,
                 ease: "power2.out",
                 onComplete: () => {
