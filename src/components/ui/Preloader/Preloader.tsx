@@ -91,7 +91,7 @@ const Preloader: React.FC = () => {
                 className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-screen z-[100] bg-hexblack"
             >
                 {/* Top Logo */}
-                <img src={LogoTop} className="logo-top opacity-0" alt="Logo Top" height={350} width={350}/>
+                <img src={LogoTop} className="logo-top opacity-0" alt="Logo Top" height={250} width={250}/>
 
                 {/* Center Logo */}
                 <img src={LogoCenter} className="logo-center opacity-0" alt="Logo Center" height={250} width={250}/>
