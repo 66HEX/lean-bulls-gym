@@ -9,6 +9,7 @@ import PowerliftingSection from "./components/PowerliftingSection/PowerliftingSe
 import PricingSection from "./components/PricingSection/PricingSection.tsx";
 import GallerySection from "./components/GallerySection/GallerySection.tsx";
 import ContactSection from "./components/ContactSection/ContactSection.tsx";
+import Preloader from "./components/ui/Preloader/Preloader.tsx";
 
 function App() {
     useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <>
+            <Preloader />
             <Header />
             <HomeSection />
             <AboutSection />
