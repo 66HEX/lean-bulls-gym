@@ -12,6 +12,8 @@ const Preloader: React.FC = () => {
 
         if (!bar || !percentElement || !preloader) return;
 
+        let id: number; // Change the type to number
+
         const frame = () => {
             if (width >= 100) {
                 clearInterval(id);
@@ -27,7 +29,7 @@ const Preloader: React.FC = () => {
         };
 
         const move = () => {
-            id = setInterval(frame, 10);
+            id = window.setInterval(frame, 10); // Use window.setInterval
         };
 
         const tll = gsap.timeline({ paused: true });
@@ -53,7 +55,6 @@ const Preloader: React.FC = () => {
             }
         });
 
-        let id: NodeJS.Timeout;
         move();
 
         if (animationComplete) {
