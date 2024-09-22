@@ -18,13 +18,13 @@ const Header = () => {
             gsap.fromTo(
                 menuRef.current,
                 { height: 0, opacity: 0 },
-                { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out", display: "flex" }
+                { height: "auto", opacity: 1, duration: 0.4, ease: "power2.out", display: "flex" }
             );
         } else if (menuRef.current) {
             gsap.to(menuRef.current, {
                 height: 0,
                 opacity: 0,
-                duration: 0.5,
+                duration: 0.4,
                 ease: "power2.in",
                 onComplete: () => {
                     if (menuRef.current) {
@@ -46,17 +46,17 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 xl:top-2 left-0 w-full z-50 bg-hexblack/70 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-5xl xl:rounded-lg" role="banner">
+        <header className="fixed top-0 xl:top-2 left-0 w-full z-50 bg-hexblack/70 backdrop-blur-lg shadow-lg md:left-1/2 md:transform md:-translate-x-1/2 md:max-w-6xl xl:rounded-lg" role="banner">
             <nav className="flex justify-between items-center leading-relaxed h-16 p-4 px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex space-x-4 items-center text-hexwhite">
                     <img src={logo} alt="Logo Lean Bulls Gym" className="h-12 w-12 xl:h-8 xl:w-8" />
                     <p className="font-ClashDisplay font-medium text-xl xl:text-lg">Lean Bulls Gym</p>
                 </div>
-                <div className="hidden lg:flex space-x-4 font-ClashDisplay text-hexwhite text-lg" role="navigation">
+                <div className="hidden lg:flex space-x-6 font-ClashDisplay text-hexwhite text-lg" role="navigation">
                     <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label="Przejdź do strony głównej">Strona główna</a>
                     <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} aria-label="Dowiedz się więcej o nas">O nas</a>
                     <a href="#team" onClick={(e) => handleLinkClick(e, '#team')} aria-label="Poznaj naszych trenerów">Trenerzy</a>
-                    <a href="#powerlifting" onClick={(e) => handleLinkClick(e, '#powerlifting')} aria-label="Sprawdź sekcję trójboju siłowego">Sekcja</a>
+                    <a href="#training" onClick={(e) => handleLinkClick(e, '#training')} aria-label="Sprawdź ofertę treningową">Oferta</a>
                     <a href="#pricing" onClick={(e) => handleLinkClick(e, '#pricing')} aria-label="Zobacz cennik">Cennik</a>
                     <a href="#gallery" onClick={(e) => handleLinkClick(e, '#gallery')} aria-label="Zobacz galerię zdjęć">Galeria</a>
                     <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} aria-label="Skontaktuj się z nami">Kontakt</a>
@@ -78,7 +78,7 @@ const Header = () => {
                 <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label="Przejdź do strony głównej">Strona główna</a>
                 <a href="#about" onClick={(e) => handleLinkClick(e, '#about')} aria-label="Dowiedz się więcej o nas">O nas</a>
                 <a href="#team" onClick={(e) => handleLinkClick(e, '#team')} aria-label="Poznaj naszych trenerów">Trenerzy</a>
-                <a href="#powerlifting" onClick={(e) => handleLinkClick(e, '#powerlifting')} aria-label="Sprawdź sekcję trójboju siłowego">Sekcja</a>
+                <a href="#training" onClick={(e) => handleLinkClick(e, '#training')} aria-label="Sprawdź sekcję trójboju siłowego">Oferta</a>
                 <a href="#pricing" onClick={(e) => handleLinkClick(e, '#pricing')} aria-label="Zobacz cennik">Cennik</a>
                 <a href="#gallery" onClick={(e) => handleLinkClick(e, '#gallery')} aria-label="Zobacz galerię zdjęć">Galeria</a>
                 <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')} aria-label="Skontaktuj się z nami">Kontakt</a>
