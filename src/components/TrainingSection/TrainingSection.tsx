@@ -19,7 +19,7 @@ const TrainingSection = () => {
                         W Lean Bulls Gym oferujemy szeroki zakres treningów personalnych, które są dostosowane do
                         potrzeb każdego klienta. Niezależnie od tego, czy jesteś początkującym, czy zaawansowanym
                         sportowcem, nasi doświadczeni trenerzy będą pracować z Tobą, aby stworzyć plan, który pomoże Ci
-                        osiągnąć Twoje cele fitnessowe, zwiększając siłę, wytrzymałość i ogólną kondycję.
+                        osiągnąć Twoje cele treningowe, zwiększając siłę, wytrzymałość i ogólną kondycję.
                     </p>
                     <p className="text-lg mb-6 font-ClashDisplay text-justify leading-relaxed">
                         Nasza siłownia dysponuje nowoczesnym sprzętem oraz strefami treningowymi, które umożliwiają
