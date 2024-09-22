@@ -5,7 +5,7 @@ import Header from "./components/ui/Header/Header.tsx";
 import HomeSection from "./components/HomeSection/HomeSection.tsx";
 import AboutSection from "./components/AboutSection/AboutSection.tsx";
 import TeamSection from "./components/TeamSection/TeamSection.tsx";
-import PowerliftingSection from "./components/PowerliftingSection/PowerliftingSection.tsx";
+import TrainingSection from "./components/TrainingSection/TrainingSection.tsx";
 import PricingSection from "./components/PricingSection/PricingSection.tsx";
 import GallerySection from "./components/GallerySection/GallerySection.tsx";
 import ContactSection from "./components/ContactSection/ContactSection.tsx";
@@ -27,7 +27,7 @@ function App() {
             <HomeSection />
             <AboutSection />
             <TeamSection />
-            <PowerliftingSection />
+            <TrainingSection />
             <PricingSection />
             <GallerySection />
             <ContactSection />
