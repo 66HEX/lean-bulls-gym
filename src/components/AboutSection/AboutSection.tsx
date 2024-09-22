@@ -13,13 +13,18 @@ const AboutSection = () => {
                         Kim jesteśmy?
                     </h2>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Lean Bulls to klub sportowy, w którym prowadzona jest sekcja trójboju siłowego oraz treningi personalne. Działamy również jako stowarzyszenie, promując aktywność fizyczną i zdrowy styl życia.
+                        Lean Bulls to klub sportowy, który oferuje sekcję trójboju siłowego oraz spersonalizowane treningi. Działamy również jako stowarzyszenie, promując aktywność fizyczną i zdrowy styl życia w lokalnej społeczności.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Klub został założony przez trzy osoby: Łukasza Klugiewicza, jednego z najlepszych zawodników trójboju siłowego w Polsce, który od lat dzieli się swoją wiedzą jako trener drużyny Lean Bulls Gdynia. Natalię Jasińską, dietetyczkę sportową, która wspiera zawodników od strony żywieniowej, pomagając im osiągać lepsze wyniki oraz Kaję Kwiatkowską, osobę związana z biznesem, dołączyła, która wspiera projekt od strony organizacyjnej.
+                        Klub został założony przez trzy pasjonujące osoby: Łukasza Klugiewicza, jednego z najlepszych
+                        zawodników trójboju siłowego w Polsce, który od lat dzieli się swoją wiedzą jako trener drużyny
+                        Lean Bulls Gdynia; Natalię Jasińską, dietetyczkę sportową wspierającą zawodników w osiąganiu
+                        lepszych wyników; oraz Kaję Kwiatkowską, ekspertkę związaną z biznesem, która wspiera nasz
+                        projekt od strony organizacyjnej.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Lean Bulls to miejsce dla każdego, kto chce rozwijać swoją siłę, kondycję oraz promować zdrowe nawyki, wspierając lokalną społeczność.
+                        Lean Bulls to miejsce dla każdego, kto pragnie rozwijać swoją siłę, kondycję oraz promować
+                        zdrowe nawyki, wspierając jednocześnie lokalną społeczność.
                     </p>
                 </div>
                 <div className="h-full xl:w-1/2 p-4 md:p-8 flex items-start justify-start order-1 xl:order-2">
