@@ -16,7 +16,7 @@ const AboutSection = () => {
                         Lean Bulls to klub sportowy, w którym prowadzona jest sekcja trójboju siłowego oraz treningi personalne. Działamy również jako stowarzyszenie, promując aktywność fizyczną i zdrowy styl życia.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Klub został założony przez trzy osoby. Łukasz Klugiewicz, jeden z najlepszych zawodników trójboju siłowego w Polsce, od lat dzieli się swoją wiedzą jako trener drużyny Lean Bulls Gdynia. Natalia Jasińska, dietetyk sportowy, wspiera zawodników od strony żywieniowej, pomagając im osiągać lepsze wyniki. Kaja Kwiatkowska, związana z biznesem, dołączyła, aby stworzyć komfortowe warunki do treningu.
+                        Klub został założony przez trzy osoby: Łukasza Klugiewicza, jednego z najlepszych zawodników trójboju siłowego w Polsce, który od lat dzieli się swoją wiedzą jako trener drużyny Lean Bulls Gdynia. Natalię Jasińską, dietetyczkę sportową, która wspiera zawodników od strony żywieniowej, pomagając im osiągać lepsze wyniki oraz Kaję Kwiatkowską, osobę związana z biznesem, dołączyła, która wspiera projekt od strony organizacyjnej.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
                         Lean Bulls to miejsce dla każdego, kto chce rozwijać swoją siłę, kondycję oraz promować zdrowe nawyki, wspierając lokalną społeczność.
