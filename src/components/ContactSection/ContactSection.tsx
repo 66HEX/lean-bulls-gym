@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                     <h3 className="text-xl md:text-2xl font-semibold mb-2 font-ClashDisplay leading-relaxed">Kontakt</h3>
                     <p className="text-lg font-ClashDisplay mb-1 leading-relaxed">ul. Polska 7</p>
                     <p className="text-lg font-ClashDisplay mb-1 leading-relaxed">81-339 Gdynia</p>
-                    <p className="text-lg font-ClashDisplay leading-relaxed">+48 505 219 027</p>
+                    <p className="text-lg font-ClashDisplay leading-relaxed">lean.bulls@gmail.com</p>
                 </div>
             </div>
 
