@@ -13,25 +13,17 @@ const AboutSection = () => {
                         Kim jesteśmy?
                     </h2>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Chcielibyśmy Wam przedstawić założycieli Lean Bulls Gym, trzy osoby z dwóch różnych światów.
-                        Zacznijmy od Łukasza Klugiewicza, zawodnika trójboju z jednym z najwyższych totali w Polsce.
-                        Łukasz
-                        od zawsze lubił pomagać trenującym, więc stworzenie drużyny i połączenie funkcji zawodnika i
-                        trenera
-                        było naturalnym krokiem. Obecnie prowadzi drużynę Lean Bulls Gdynia.
+                        Lean Bulls to klub sportowy, który oferuje sekcję trójboju siłowego oraz spersonalizowane treningi. Działamy również jako stowarzyszenie, promując aktywność fizyczną i zdrowy styl życia w lokalnej społeczności.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Natalia Jasińska, absolwentka GUMedu i AWFu, pracuje z zawodnikami, pomagając im osiągać lepsze
-                        wyniki siłowe ze strony dietetycznej. Pasja Łukasza zainspirowała ją do entuzjastycznego
-                        wsparcia
-                        pomysłu otwarcia nowej siłowni.
+                        Siłownia została założona przez trzy osoby pasjonujące się trójbojem siłowym:
+                        Łukasza Klugiewicza, jednego z najlepszych zawodników trójboju siłowego w Polsce, który od lat dzieli się swoją wiedzą jako trener drużyny Lean Bulls Gdynia,
+                        Natalię Jasińską, dietetyczkę sportową wspierającą w tym zakresie zawodników w osiąganiu lepszych wyników
+                        Kaję Kwiatkowską, ekspertkę związaną z biznesem, będącą także wsparciem organizacyjnym przedsięwzięcia.
                     </p>
                     <p className="text-justify text-hexblack font-ClashDisplay text-lg leading-relaxed">
-                        Kaja Kwiatkowska, osoba z biznesu, poznała Łukasza trenując w jednej drużynie. Po zamknięciu
-                        siłowni,
-                        zaczęła zastanawiać się nad stworzeniem komfortowych warunków do treningu. Po rozmowie z
-                        Łukaszem i
-                        Natalią postanowiła dołączyć do nich i wesprzeć projekt Lean Bulls Gym.
+                        Lean Bulls to miejsce dla każdego, kto pragnie rozwijać swoją siłę, kondycję oraz promować
+                        zdrowe nawyki, wspierając jednocześnie lokalną społeczność.
                     </p>
                 </div>
                 <div className="h-full xl:w-1/2 p-4 md:p-8 flex items-start justify-start order-1 xl:order-2">
