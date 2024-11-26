@@ -20,6 +20,8 @@ const HomeSection = () => {
             <div
                 className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-100 z-0"></div>
 
+            <div className="absolute inset-0 bg-black opacity-10 z-0"></div>
+
             <h1 className="text-5xl md:text-8xl font-bold text-center mb-5 font-ClashDisplay uppercase mt-20 z-10">
                 Siła, która napędza zwycięstwo
             </h1>
