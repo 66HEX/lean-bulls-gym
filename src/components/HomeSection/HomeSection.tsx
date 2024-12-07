@@ -17,18 +17,18 @@ const HomeSection = () => {
                 backgroundImage: `url(${'/home.webp'})`,
             }}
         >
-            <div
-                className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-100 z-0"></div>
-
-            <div className="absolute inset-0 bg-black opacity-10 z-0"></div>
-
+            <img
+                src="/home.webp"
+                alt="Tło sekcji"
+                className="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm"
+            />
+            <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
             <h1 className="text-5xl md:text-8xl font-bold text-center mb-5 font-ClashDisplay uppercase mt-20 z-10">
                 Siła, która napędza zwycięstwo
             </h1>
             <p className="text-lg md:text-xl font-semibold text-center mb-10 font-ClashDisplay uppercase z-10 leading-relaxed">
                 Dołącz do nas i poczuj, jak siła staje się Twoją pasją.
             </p>
-
             <button
                 onClick={handleScrollToAbout}
                 className="mt-10 border-2 border-hexwhite p-5 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-hexwhite focus:outline-none z-10 group"
@@ -45,9 +45,8 @@ const HomeSection = () => {
                     <path className="cls-1"
                           d="m10.9,358.85l366.66,333.33c12.7,11.57,32.17,11.57,44.87,0l366.66-333.33c6.93-6.3,10.9-15.27,10.9-24.67v-116.93s-377.63,341.66-377.63,341.66c-12.7,11.5-32.03,11.5-44.73,0L0,217.26v116.93c0,9.4,3.97,18.37,10.9,24.67Z"/>
                 </svg>
-
             </button>
-
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent to-black"/>
         </section>
     );
 };

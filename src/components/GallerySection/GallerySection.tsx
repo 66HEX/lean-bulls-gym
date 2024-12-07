@@ -66,18 +66,18 @@ const GallerySection = () => {
                             <img
                                 src={image}
                                 alt={`Zdjęcie siłowni ${index + 1}`}
-                                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                className="image w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                             />
                         </div>
                     ))}
                 </div>
 
-                {lightboxOpen && (
-                    <>
+
+
                         <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center">
                             <div
                                 ref={lightboxRef}
-                                className="relative max-w-4xl max-h-4xl bg-hexwhite p-4 rounded-lg"
+                                className="relative max-w-4xl max-h-4xl bg-hexwhite overflow-hidden m-4 rounded-lg"
                             >
                                 <img
                                     src={currentImage || ''}
@@ -92,8 +92,8 @@ const GallerySection = () => {
                         >
                             <FontAwesomeIcon icon={faTimes} size="xl" />
                         </button>
-                    </>
-                )}
+
+
             </div>
         </section>
     );
