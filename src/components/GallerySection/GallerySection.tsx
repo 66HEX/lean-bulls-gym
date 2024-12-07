@@ -6,7 +6,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 const GallerySection = () => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState<string | null>(null);
-    const lightboxRef = useRef<HTMLDivElement>(null); // Referencja do kontenera lightboxa
+    const lightboxRef = useRef<HTMLDivElement>(null);
 
     const galleryImages = [
         './gym/gym-photo-1.webp',
@@ -72,28 +72,27 @@ const GallerySection = () => {
                     ))}
                 </div>
 
-
-
-                        <div className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center">
-                            <div
-                                ref={lightboxRef}
-                                className="relative max-w-4xl max-h-4xl bg-hexwhite overflow-hidden m-4 rounded-lg"
-                            >
-                                <img
-                                    src={currentImage || ''}
-                                    alt="Powiększone zdjęcie"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                        </div>
-                        <button
-                            onClick={closeLightbox}
-                            className="fixed top-0 right-0 text-hexwhite text-2xl rounded-full p-4 z-50"
-                        >
-                            <FontAwesomeIcon icon={faTimes} size="xl" />
-                        </button>
-
-
+                <div
+                    className="fixed inset-0 z-50 lightbox bg-black bg-opacity-80 flex items-center justify-center"
+                    style={{display: "none"}}
+                >
+                    <div
+                        ref={lightboxRef}
+                        className="relative max-w-4xl max-h-4xl overflow-hidden m-4 rounded-lg"
+                    >
+                        <img
+                            src={currentImage || ''}
+                            alt="Powiększone zdjęcie"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                    <button
+                        onClick={closeLightbox}
+                        className="fixed top-0 right-0 text-hexwhite text-2xl rounded-full p-4 z-50"
+                    >
+                        <FontAwesomeIcon icon={faTimes} size="xl"/>
+                    </button>
+                </div>
             </div>
         </section>
     );

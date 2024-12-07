@@ -18,13 +18,13 @@ const Header = () => {
             gsap.fromTo(
                 menuRef.current,
                 { height: 0, opacity: 0 },
-                { height: "auto", opacity: 1, duration: 0.4, ease: "power2.out", display: "flex" }
+                { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out", display: "flex" }
             );
         } else if (menuRef.current) {
             gsap.to(menuRef.current, {
                 height: 0,
                 opacity: 0,
-                duration: 0.4,
+                duration: 0.5,
                 ease: "power2.in",
                 onComplete: () => {
                     if (menuRef.current) {
@@ -71,7 +71,7 @@ const Header = () => {
             </nav>
             <div
                 ref={menuRef}
-                className="md:hidden text-xl overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 rounded-lg shadow-lg"
+                className="md:hidden text-xl overflow-hidden flex flex-col space-y-4 font-ClashDisplay text-hexwhite mt-4 p-4 pb-8 rounded-lg shadow-lg"
                 style={{ display: isOpen ? "flex" : "hidden" }}
                 role="navigation"
             >

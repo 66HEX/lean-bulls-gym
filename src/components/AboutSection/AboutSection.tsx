@@ -26,7 +26,7 @@ const AboutSection = () => {
                         zdrowe nawyki, wspierając jednocześnie lokalną społeczność.
                     </p>
                 </div>
-                <div className="h-full xl:w-1/2 p-4 md:p-8 flex items-start justify-start order-1 xl:order-2">
+                <div className="h-full xl:w-1/2 md:p-8 flex items-start justify-start order-1 xl:order-2">
                     <img
                         src={aboutImage}
                         alt="Zdjęcie założycieli Lean Bulls Gym"

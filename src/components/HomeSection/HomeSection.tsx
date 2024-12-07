@@ -20,9 +20,8 @@ const HomeSection = () => {
             <img
                 src="/home.webp"
                 alt="Tło sekcji"
-                className="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm"
+                className="absolute inset-0 w-full h-full object-cover z-0"
             />
-            <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
             <h1 className="text-5xl md:text-8xl font-bold text-center mb-5 font-ClashDisplay uppercase mt-20 z-10">
                 Siła, która napędza zwycięstwo
             </h1>
@@ -31,11 +30,11 @@ const HomeSection = () => {
             </p>
             <button
                 onClick={handleScrollToAbout}
-                className="mt-10 border-2 border-hexwhite p-5 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-hexwhite focus:outline-none z-10 group"
+                className="mt-10 border-2 border-hexwhite p-5 rounded-full flex items-center justify-center transition-all duration-500 hover:bg-hexwhite focus:outline-none z-10 group"
                 aria-label="Scroll down"
             >
                 <svg
-                    className="h-10 w-10 transition-colors duration-300 group-hover:fill-hexblack"
+                    className="h-10 w-10 transition-colors duration-500 group-hover:fill-hexblack"
                     viewBox="0 0 800.49 700.85"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
