@@ -46,7 +46,7 @@ const HomeSection = () => {
                     <h1 className="text-5xl md:text-7xl font-bold text-hexwhite font-ClashDisplay uppercase leading-tight mb-6">
                         Siła, która
                         <span className="block">napędza</span>
-                        <span className="block bg-gradient-to-r from-hexred to-red-600 text-transparent bg-clip-text opacity-70 backdrop-blur-md">zwycięstwo</span>
+                        <span className="block bg-gradient-to-r from-hexred to-red-600 text-transparent bg-clip-text">zwycięstwo</span>
                     </h1>
                     <p className="text-xl text-hexwhite font-ClashDisplay mb-8 leading-relaxed">
                         Przekraczaj własne granice pod okiem profesjonalistów. Twój sukces jest naszą pasją.
