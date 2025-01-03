@@ -4,10 +4,10 @@ const TrainingSection = () => {
             id="training"
             className="w-screen flex flex-col justify-center items-center bg-cover bg-center text-hexwhite p-4 md:p-8 lg:p-12 xl:p-16 relative"
             style={{
-                backgroundImage: `linear-gradient(rgba(90, 20, 20, 0.8), rgba(90, 20, 20, 0.8)), url('/powerlifting.webp')`,
+                backgroundImage: `linear-gradient(rgba(90, 20, 20, 0.9), rgba(90, 20, 20, 0.9)), url('/powerlifting.webp')`,
             }}
         >
-            <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
+            <div className="absolute inset-0 bg-black/50 z-0"></div>
 
             <div className="relative z-10 flex flex-col items-center text-center">
                 <h1 className="text-4xl md:text-6xl mt-4 font-semibold font-ClashDisplay leading-relaxed">

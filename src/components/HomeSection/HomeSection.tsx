@@ -1,51 +1,72 @@
+import backgroundImage from '/home.webp';
 import Lenis from 'lenis';
-
+import BackgroundOverlay from '../ui/BackgroundOverlay/BackgroundOverlay.tsx'
 const HomeSection = () => {
-    const handleScrollToAbout = () => {
+    const handleScrollToTeam = () => {
         const lenis = window.lenis as Lenis;
-        const aboutSection = document.querySelector('#about') as HTMLElement;
-        if (aboutSection) {
-            lenis.scrollTo(aboutSection);
+        const teamSection = document.querySelector('#team') as HTMLElement;
+        if (teamSection) {
+            lenis.scrollTo(teamSection);
+        }
+    };
+
+    const handleScrollToContact = () => {
+        const lenis = window.lenis as Lenis;
+        const contactSection = document.querySelector('#contact') as HTMLElement;
+        if (contactSection) {
+            lenis.scrollTo(contactSection);
         }
     };
 
     return (
         <section
             id="home"
-            className="w-screen h-svh flex flex-col justify-center items-center bg-cover bg-center text-hexwhite p-4 md:p-8 lg:p-12 xl:p-16"
-            style={{
-                backgroundImage: `url(${'/home.webp'})`,
-            }}
+            className="relative w-screen h-screen overflow-hidden"
         >
-            <img
-                src="/home.webp"
-                alt="Tło sekcji"
-                className="absolute inset-0 w-full h-full object-cover z-0"
-            />
-            <h1 className="text-5xl md:text-8xl font-bold text-center mb-5 font-ClashDisplay uppercase mt-20 z-10">
-                Siła, która napędza zwycięstwo
-            </h1>
-            <p className="text-lg md:text-xl font-semibold text-center mb-10 font-ClashDisplay uppercase z-10 leading-relaxed">
-                Dołącz do nas i poczuj, jak siła staje się Twoją pasją.
-            </p>
-            <button
-                onClick={handleScrollToAbout}
-                className="mt-10 border-2 border-hexwhite p-5 rounded-full flex items-center justify-center transition-all duration-500 hover:bg-hexwhite focus:outline-none z-10 group"
-                aria-label="Scroll down"
+            <div
+                className="absolute inset-0 w-full h-full"
+                style={{
+                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}
             >
-                <svg
-                    className="h-10 w-10 transition-colors duration-500 group-hover:fill-hexblack"
-                    viewBox="0 0 800.49 700.85"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                >
-                    <path className="cls-1"
-                          d="m11.4,141.6l366.66,333.33c12.7,11.57,32.17,11.57,44.87,0l366.66-333.33c6.93-6.3,10.9-15.27,10.9-24.67V0s-377.63,341.66-377.63,341.66c-12.7,11.5-32.03,11.5-44.73,0L.5,0v116.93c0,9.4,3.97,18.37,10.9,24.67Z"/>
-                    <path className="cls-1"
-                          d="m10.9,358.85l366.66,333.33c12.7,11.57,32.17,11.57,44.87,0l366.66-333.33c6.93-6.3,10.9-15.27,10.9-24.67v-116.93s-377.63,341.66-377.63,341.66c-12.7,11.5-32.03,11.5-44.73,0L0,217.26v116.93c0,9.4,3.97,18.37,10.9,24.67Z"/>
-                </svg>
-            </button>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent to-black"/>
+                <div
+                    className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-black/70 to-black"/>
+                \
+                <div
+                    className="absolute inset-0 bg-black opacity-20"/>
+            </div>
+            <BackgroundOverlay/>
+
+            <div
+                className="relative h-full container mx-auto flex flex-col justify-center items-start p-4 md:p-8 lg:p-12 xl:p-16">
+            <div className="max-w-xl">
+                    <h1 className="text-5xl md:text-7xl font-bold text-hexwhite font-ClashDisplay uppercase leading-tight mb-6">
+                        Siła, która
+                        <span className="block">napędza</span>
+                        <span className="block bg-gradient-to-r from-hexred to-red-600 text-transparent bg-clip-text opacity-70 backdrop-blur-md">zwycięstwo</span>
+                    </h1>
+                    <p className="text-xl text-hexwhite font-ClashDisplay mb-8 leading-relaxed">
+                        Przekraczaj własne granice pod okiem profesjonalistów. Twój sukces jest naszą pasją.
+                    </p>
+                <div className="flex gap-6">
+                    <button
+                        onClick={handleScrollToTeam}
+                        className="bg-hexwhite/[0.05] border border-white/[0.1] backdrop-blur-md text-hexwhite px-6 py-3 rounded-md text-lg font-ClashDisplay"
+                    >
+                        Poznaj naszą kadrę
+                    </button>
+                    <button
+                        onClick={handleScrollToContact}
+                        className="bg-gradient-to-r from-hexred/[0.3] to-red-700/[0.3] border border-hexred/[0.1] backdrop-blur-md text-hexwhite px-6 py-3 rounded-md text-lg font-ClashDisplay"
+                    >
+                        Kontakt
+                    </button>
+                </div>
+            </div>
+            </div>
         </section>
     );
 };
