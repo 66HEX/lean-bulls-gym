@@ -21,7 +21,7 @@ const HomeSection = () => {
     return (
         <section
             id="home"
-            className="relative w-screen h-screen overflow-hidden"
+            className="relative w-screen h-svh overflow-hidden"
         >
             <div
                 className="absolute inset-0 w-full h-full"
