@@ -43,14 +43,23 @@ const HomeSection = () => {
             <div
                 className="relative h-full container mx-auto flex flex-col justify-center items-start p-4 md:p-8 lg:p-12 xl:p-16">
             <div className="max-w-xl">
-                    <h1 className="text-5xl md:text-7xl font-bold text-hexwhite font-ClashDisplay uppercase leading-tight mb-6">
+                    <h1 className="text-5xl md:text-7xl font-bold text-hexwhite font-ClashDisplay uppercase mb-6">
                         Siła, która
                         <span className="block">napędza</span>
-                        <span className="block bg-gradient-to-r from-hexred/[0.6] to-red-700/[0.6] backdrop-blur-md text-transparent bg-clip-text">zwycięstwo</span>
+                        <div className="relative">
+                            {/* Rozmyta warstwa wewnętrzna */}
+                            <h1 className="absolute inset-0 text-hexred/50 blur-sm">
+                                zwycięstwo
+                            </h1>
+                            {/* Ostra warstwa zewnętrzna */}
+                            <h1 className="relative text-hexred">
+                                zwycięstwo
+                            </h1>
+                        </div>
                     </h1>
-                    <p className="text-xl text-hexwhite font-ClashDisplay mb-8 leading-relaxed">
-                        Przekraczaj własne granice pod okiem profesjonalistów. Twój sukces jest naszą pasją.
-                    </p>
+                <p className="text-xl text-hexwhite font-ClashDisplay mb-8 leading-relaxed">
+                    Przekraczaj własne granice pod okiem profesjonalistów. Twój sukces jest naszą pasją.
+                </p>
                 <div className="flex gap-6">
                     <button
                         onClick={handleScrollToTeam}
@@ -60,7 +69,7 @@ const HomeSection = () => {
                     </button>
                     <button
                         onClick={handleScrollToContact}
-                        className="bg-gradient-to-r from-hexred/[0.3] to-red-700/[0.3] border border-hexred/[0.1] backdrop-blur-md text-hexwhite px-6 py-3 rounded-md text-lg font-ClashDisplay"
+                        className="bg-gradient-to-r from-hexred/[0.5] to-red-700/[0.5] border border-hexred/[0.1] backdrop-blur-md text-hexwhite px-6 py-3 rounded-md text-lg font-ClashDisplay"
                     >
                         Kontakt
                     </button>
