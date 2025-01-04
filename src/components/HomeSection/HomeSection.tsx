@@ -32,7 +32,7 @@ const HomeSection = () => {
                     backgroundRepeat: 'no-repeat'
                 }}
             >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-black/70 to-black"/>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent to-black"/>
             </div>
             <div
                 className="relative h-full container mx-auto flex flex-col justify-center items-start p-4 md:p-8 lg:p-12 xl:p-16">
