@@ -2,7 +2,7 @@ const PricingSection = () => {
     const pricingPlans = [
         {
             name: 'Uczeń/Student',
-            price: '150 PLN/mc',
+            price: '170 PLN/mc',
             description: 'Karnet miesięczny ze zniżką dla uczniów i studentów',
             features: [
                 'Dostęp do siłowni przez 30 dni',
@@ -11,7 +11,7 @@ const PricingSection = () => {
         },
         {
             name: 'Zawodnicy trójboju',
-            price: '169 PLN/mc',
+            price: '200 PLN/mc',
             description: 'Karnet miesięczny ze zniżką dla zawodników sportów siłowych',
             features: [
                 'Dostęp do siłowni przez 30 dni',
@@ -20,7 +20,7 @@ const PricingSection = () => {
         },
         {
             name: 'Normalny',
-            price: '199 PLN/mc',
+            price: '220 PLN/mc',
             description: 'Nielimitowany dostęp do siłowni przez 30 dni',
             features: [
                 'Nielimitowany dostęp do siłowni przez 30 dni',
@@ -29,7 +29,7 @@ const PricingSection = () => {
         },
         {
             name: 'Wejście jednorazowe',
-            price: '29 PLN/wejście',
+            price: '39 PLN/wejście',
             description: 'Jednorazowy dostęp do siłowni na 1 dzień',
             features: [
                 'Dostęp do siłowni na 1 dzień'
