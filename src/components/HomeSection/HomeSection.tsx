@@ -1,6 +1,6 @@
 import backgroundImage from '/home.webp';
 import Lenis from 'lenis';
-import BackgroundOverlay from '../ui/BackgroundOverlay/BackgroundOverlay.tsx'
+
 const HomeSection = () => {
     const handleScrollToTeam = () => {
         const lenis = window.lenis as Lenis;
